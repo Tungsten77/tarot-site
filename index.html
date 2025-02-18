@@ -12,47 +12,75 @@
             <img src="images/logo.png" alt="Логотип" class="logo">
             <nav>
                 <ul>
+                    <li><a href="#home">Главная</a></li>
                     <li><a href="#about">Обо мне</a></li>
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#gadanije">Гадание</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <section id="hero">
+    <section id="home" class="hero">
         <div class="container">
             <h1>Онлайн-гадание на картах Таро</h1>
             <p>Помогу разобраться в жизненных ситуациях и найти ответы.</p>
-            <a href="#gadanije" class="btn">Начать гадание</a>
+            <a href="#gadanije" class="btn">Попробовать гадание</a>
         </div>
     </section>
-
+    
     <section id="about">
         <div class="container">
             <h2>Обо мне</h2>
-            <img src="images/tarologist.jpg" alt="Таролог">
-            <p>Я профессиональный таролог с многолетним опытом. Помогу вам найти ответы на важные вопросы.</p>
+            <div class="about-content">
+                <img src="images/tarologist.jpg" alt="Таролог">
+                <p>Я — опытный таролог, занимаюсь гаданием более 10 лет. Помогаю людям находить ответы на важные вопросы.</p>
+            </div>
         </div>
     </section>
     
     <section id="services">
         <div class="container">
             <h2>Услуги</h2>
-            <ul>
-                <li>Гадание на любовь и отношения</li>
-                <li>Финансовые прогнозы</li>
-                <li>Ответы на важные вопросы</li>
-            </ul>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Любовные отношения</h3>
+                    <p>Гадание на любовь и отношения.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Финансовые вопросы</h3>
+                    <p>Расклады на финансовое благополучие.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Общий прогноз</h3>
+                    <p>Прогноз на ближайшее будущее.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="testimonial">
+                <p>«Очень точное гадание! Получила полезные советы, которые помогли мне изменить ситуацию.»</p>
+                <span>- Анна</span>
+            </div>
+            <div class="testimonial">
+                <p>«Благодарю за развернутый расклад! Всё сбылось!»</p>
+                <span>- Марина</span>
+            </div>
         </div>
     </section>
     
     <section id="gadanije">
         <div class="container">
-            <h2>Гадание онлайн</h2>
+            <h2>Попробуйте гадание</h2>
             <p>Сосредоточьтесь на вопросе и нажмите на колоду карт.</p>
-            <img src="images/tarot-deck.png" alt="Колода карт" onclick="drawCard()">
+            <div class="tarot-deck" onclick="drawCard()">
+                <img src="images/tarot-deck.png" alt="Колода карт">
+            </div>
             <p id="cardResult"></p>
         </div>
     </section>
@@ -60,10 +88,11 @@
     <section id="contact">
         <div class="container">
             <h2>Контакты</h2>
-            <p>Свяжитесь со мной через:</p>
+            <p>Свяжитесь со мной:</p>
             <ul>
                 <li><a href="https://wa.me/">WhatsApp</a></li>
                 <li><a href="https://t.me/">Telegram</a></li>
+                <li><a href="mailto:example@mail.com">Email</a></li>
             </ul>
         </div>
     </section>
