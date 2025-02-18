@@ -8,36 +8,71 @@
 </head>
 <body>
     <header>
-        <h1>Гадание на картах Таро</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#gadanije">Гадание</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Логотип" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gadanije">Гадание</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
+    <section id="hero">
+        <div class="container">
+            <h1>Онлайн-гадание на картах Таро</h1>
+            <p>Помогу разобраться в жизненных ситуациях и найти ответы.</p>
+            <a href="#gadanije" class="btn">Начать гадание</a>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>Обо мне</h2>
-        <p>Здравствуйте! Я профессиональный таролог, помогаю разобраться в жизненных ситуациях.</p>
+        <div class="container">
+            <h2>Обо мне</h2>
+            <img src="images/tarologist.jpg" alt="Таролог">
+            <p>Я профессиональный таролог с многолетним опытом. Помогу вам найти ответы на важные вопросы.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>Услуги</h2>
+            <ul>
+                <li>Гадание на любовь и отношения</li>
+                <li>Финансовые прогнозы</li>
+                <li>Ответы на важные вопросы</li>
+            </ul>
+        </div>
     </section>
     
     <section id="gadanije">
-        <h2>Гадание онлайн</h2>
-        <p>Сосредоточьтесь на вопросе и нажмите на колоду.</p>
-        <button onclick="drawCard()">Вытянуть карту</button>
-        <p id="cardResult"></p>
+        <div class="container">
+            <h2>Гадание онлайн</h2>
+            <p>Сосредоточьтесь на вопросе и нажмите на колоду карт.</p>
+            <img src="images/tarot-deck.png" alt="Колода карт" onclick="drawCard()">
+            <p id="cardResult"></p>
+        </div>
     </section>
     
     <section id="contact">
-        <h2>Контакты</h2>
-        <p>Свяжитесь со мной через:</p>
-        <ul>
-            <li><a href="https://wa.me/">WhatsApp</a></li>
-            <li><a href="https://t.me/">Telegram</a></li>
-        </ul>
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной через:</p>
+            <ul>
+                <li><a href="https://wa.me/">WhatsApp</a></li>
+                <li><a href="https://t.me/">Telegram</a></li>
+            </ul>
+        </div>
     </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Все права защищены.</p>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
